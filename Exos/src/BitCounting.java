@@ -11,12 +11,8 @@ public class BitCounting {
 
     public static int countBits(int n){
         String bits = binary(n);
-        int sum = 0;
-        for(int i = 0; i < bits.length(); ++i){
-            if(bits.charAt(i) == '1'){
-                ++sum;
-            }
-        }
+        int sum = bits.replaceAll("0", "").length();
+
 
         return sum;
         //return Integer.bitCount(n);
