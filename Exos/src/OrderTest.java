@@ -1,0 +1,20 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class OrderTest {
+
+    @Test
+    void order() {
+        assertEquals("Thi1s is2 3a T4est", Order.order("is2 Thi1s T4est 3a"));
+        assertEquals("Fo1r the2 g3ood 4of th5e pe6ople", Order.order("4of Fo1r pe6ople g3ood th5e the2"));
+        assertEquals("", Order.order(""));
+    }
+
+    @Test
+    void findIndex() {
+        assertEquals(1, Order.findIndex("1",new String[]{"is2", "Thi1s", "T4est", "3a"}));
+        assertEquals(3, Order.findIndex("3",new String[]{"is2", "Thi1s", "T4est", "3a"}));
+    }
+
+}
