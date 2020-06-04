@@ -10,3 +10,77 @@ public class Test {
 
     }
 }
+
+
+
+
+
+
+
+/*
+import java.util.*;
+
+class A {
+
+    static boolean exists(int[] ints, int k) {
+        int min = 0;
+        int max = ints.length - 1;
+
+        while(min <= max){
+            int index = (min + max) / 2;
+            int val = ints[index];
+
+            if(val == k){
+                return true;
+            }else{
+                if(val < k){
+                    min = index + 1;
+                }else{
+                    max = index - 1;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+class Node {
+
+    // keep these​​​​​​‌​​​‌‌​​‌​‌​​​​​‌​‌​‌​‌​​ fields
+    Node left, right;
+    int value;
+
+    public boolean recherche(int value) {
+        if (value == getValeur())
+            return true;
+        if ((value < getValeur()) && (getSousArbreGauche() != null))
+            return (getSousArbreGauche().recherche(value));
+        if ((value > getValeur()) && (getSousArbreDroit() != null))
+            return (getSousArbreDroit().recherche(value));
+        return false;
+    }
+
+   Node find(int val){
+        if(){
+            return this;
+        }else if( val < value){
+            return this.left.find(val);
+        }else{
+            return this.right.find(val);
+        }
+
+        Node node = this;
+        while (this != null && value != val){
+            if(val < value){
+                node = node.left;
+            }else {
+                node = node.right;
+            }
+        }
+
+        return node;
+    }
+
+
+}
+ */
