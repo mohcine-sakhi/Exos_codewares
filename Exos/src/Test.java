@@ -1,11 +1,16 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(1234).replaceAll("0", ""));
+        int[] tab = Solution.twoSum(new int[]{1,2,3}, 4);
+
+
+        System.out.println(Arrays.binarySearch(new int[]{1,2,3}, 1108));
+        System.out.println(0 % 5);
 
 
     }
